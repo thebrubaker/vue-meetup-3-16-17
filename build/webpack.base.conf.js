@@ -27,7 +27,8 @@ module.exports = {
       'routes': resolve('src/routes'),
       'store': resolve('src/store'),
       'middleware': resolve('src/middleware'),
-      'events': resolve('src/events')
+      'events': resolve('src/events'),
+      'utilities': resolve('src/utilities')
     }
   },
   module: {
