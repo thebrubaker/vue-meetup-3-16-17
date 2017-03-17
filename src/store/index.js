@@ -5,9 +5,10 @@ import actions from 'src/store/actions'
 import getters from 'src/store/getters'
 import { getFilenames, importDirectory } from 'utilities'
 
-let context = require.context('./modules', true, /\.(js)$/)
-let directory = context.keys().map(context).map(file => file.default)
+const directory = require.context('./modules', true, /\.js$/)
+const imports = directory.keys().map(directory)
 
+// import all files in the the event directory
 let filenames = getFilenames(directory)
 let modules = importDirectory(imports, filenames)
 
