@@ -6,6 +6,10 @@ import getters from 'src/store/getters'
 import auth from 'src/store/modules/auth'
 import example from 'src/store/modules/layout'
 
+let context = require.context('./modules', true, /\.(js)$/)
+let files = context.keys().map(context).map(file => file.default)
+console.log(files)
+
 Vue.use(Vuex)
 
 export default new Vuex.Store({
