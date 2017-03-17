@@ -1,8 +1,8 @@
-import mutations from 'store/mutations'
-import actions from 'store/actions'
-import getters from 'store/getters'
-import auth from 'store/modules/auth'
-import example from 'store/modules/example'
+import mutations from 'src/store/mutations'
+import actions from 'src/store/actions'
+import getters from 'src/store/getters'
+import auth from 'src/store/modules/auth'
+import example from 'src/store/modules/layout'
 
 export default new Vuex({
   mutations: mutations,
